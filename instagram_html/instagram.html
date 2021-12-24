@@ -4,14 +4,8 @@
     <meta charset="UTF-8">
     <title>kakao frofile</title>
     <style>
-
-        .main_common {
-
-
-        }
-
         #main {
-            max-width: 400px;
+            max-width: 500px;
             min-width: 500px;
             width: 60%;
             margin: 0px auto 0px auto;
@@ -22,15 +16,16 @@
         }
 
         #up_manu {
-            height: 5%;
+            height: 8%;
             width: 100%;
+            max-width: 500px;
+            max-width: 500px;
             display: flex;
-            justify-content: space-around;
+            justify-content: space-between;
+            align-items: center;
             text-align: center;
             background-color: white;
-            position: sticky;
-
-
+            position: fixed;
         }
 
         .box {
@@ -46,9 +41,9 @@
         }
 
         .up_manu_image {
-            flex-grow: 1;
-            text-align: center;
-            margin: auto;
+            margin: 1% 3%;
+
+
         }
 
         #up_manu_image2 {
@@ -71,6 +66,7 @@
             text-align: center;
             background-color: aliceblue;
             box-shadow: 0px 0px 3px 0px black;
+            padding-top: 12%;
         }
 
         .profile_box {
@@ -140,6 +136,7 @@
         }
 
         .down_image_list_item {
+            margin: auto;
             flex-grow: 1;
         }
 
@@ -153,6 +150,25 @@
             display: flex;
             justify-content: space-around;
             text-align: center;
+        }
+        .like_list_text{
+
+            margin :auto 32% auto auto;
+            text-align: right;
+
+        }
+        .footer{
+            height: 5%;
+            width: 100%;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            text-align: center;
+            max-width: 500px;
+            background-color: white;
+            position: fixed;
+            bottom :0;
+
 
         }
 
@@ -212,8 +228,8 @@
         </div>
     </div>
     <div class="main_image"><img class="main_image"
-                                 src="https://th.bing.com/th/id/OIP.jTq0FDQcjZqaZCtIh3BUIAHaHa?w=192&h=192&c=7&r=0&o=5&pid=1.7">
-    </div>
+                                 src="https://th.bing.com/th/id/OIP.jTq0FDQcjZqaZCtIh3BUIAHaHa?w=192&h=192&c=7&r=0&o=5&pid=1.7"> </div>
+
     <div class=down_image_list>
         <div class=down_image_list_item><img class="down_image_image" src="insta-logo/like@3x.png"></div>
         <div class=down_image_list_item><img class="down_image_image" src="insta-logo/comment@3x.png"></div>
@@ -228,7 +244,17 @@
         <div class="like_list_text"><b>이용자</b> 님 <b>외 6,671명이</b> 좋아합니다
         </div>
     </div>
+    <div style="margin-left: 2%;"> 이용자 안녕하세요</div>
+    <div class="footer">
+        <div class=down_image_list_item><img class="down_image_image" src="insta-logo/home@3x.png"></div>
+        <div class=down_image_list_item><img class="down_image_image" src="insta-logo/search@3x.png"></div>
+        <div class=down_image_list_item><img class="down_image_image" src="insta-logo/trending@3x.png"></div>
+        <div class=down_image_list_item><img class="down_image_image" src="insta-logo/favorite@3x.png"></div>
+        <div class=down_image_list_item><img class="down_image_image" src="insta-logo/home@3x.png"></div>
+    </div>
+
 </div>
+
 
 </body>
 </html>
