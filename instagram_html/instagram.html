@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
     <title>kakao frofile</title>
     <style>
         #main {
@@ -11,7 +12,6 @@
             margin: 0px auto 0px auto;
             box-shadow: 0px 0px 3px 0px black;
             padding: 0px;
-
 
         }
 
@@ -168,90 +168,283 @@
             background-color: white;
             position: fixed;
             bottom :0;
-
-
         }
 
-
-        .profile_padding {
-
-            padding: 200px 60px 20px 60px;
-        }
-
-        .box-container {
+        #desk_icon_box{
+            height: 5%;
+            width: 33%;
             display: flex;
             justify-content: space-around;
+            align-items: center;
             text-align: center;
+            max-width: 500px;
+            background-color: white;
+        }
+
+        @media (min-width: 1000px) {
+            #up_manu, .footer {
+                display: none;
+            }
+
+            #desk_header {
+                background-color: white;
+                width: 100%;
+                position: fixed;
+                display: flex;
+                top: 0;
+                left: 0;
+                align-items: center;
+                justify-content: center;
+                border-bottom: 1px solid lightgray;
+            }
+
+            #desk_header #desk_wrapper {
+                max-width: 1000px;
+                padding: 10px 20px;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+            }
+
+            #desk_wrapper #desk_insta_box {
+                width: 33.3%;
+            }
+
+            #desk_insta_box > img {
+                width: 40%;
+                height: 40%;
+            }
+
+            #desk_search_box {
+                color: gray;
+                margin: 0 5%;
+                display: flex;
+                align-items: center;
+                justify-content: flex-start;
+                width: 33.3%;
+                height: 34px;
+                border: 1px solid lightgray;
+                background-color: rgba(215, 215, 215, 0.1);
+                border-radius: 3px;
+                padding-left: 15px;
+            }
+
+
+            #desk_search_box>img{
+                width: 4%;
+                /*투명도*/
+                opacity :0.5;
+                margin-right: 10px;
+            }
+
+            #container {
+                padding-bottom: 0%;
+                background-color: rgba(215, 215, 215, 0.1);
+                display: flex;
+                justify-content: center;
+                align-items: flex-start;
+                width: 100%;
+
+            }
+            #main{
+                max-width: 80%;
+                box-shadow: none;
+            }
+
+            #main_container {
+                max-width: 650px;
+                min-width: 500px;
+
+                margin-right: 40px;
+
+            }
+
+            #desk_container {
+                display: flex;
+                flex-direction: column;
+                min-width: 310px;
+                margin-right: 10px;
+
+            }
+            #desk_container_header{
+                padding-top: 30%;
+                isplay: flex;
+                align-items: center;
+                justify-content: flex-start;
+
+            }
+
+             #desk_container_header , .desk_container_user_card, .desk_right_side_user_box {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+            }
+             .desk_right_side_user_box_user_name{
+                 flex-grow: 6;
+                 margin-left:10px;
+             }
+
+
+            .desk_right_side_user_box > img {
+                text-align: center;
+                border-radius: 100px;
+                font-size: 20px;
+                margin: auto;
+                max-width: 50px;
+                flex-grow: 1;
+
+            }
+            .desk_container_user_card >p{
+                text-align: left;
+                flex-grow: 4;
+                margin-left: 20px;
+                margin-bottom : 10px;
+            }
+            .gray{
+                color: gray;
+            }
+
 
         }
+
+            @media (max-width: 1000px) {
+                #desk_header, #desk_container {
+                    display: none;
+                }
+            }
+
+
+
 
 
     </style>
 </head>
 <body>
+
 <div id="main">
     <div id="up_manu">
         <div class="box"><img class="up_manu_image" src="insta-logo/camera@3x.png"><br></div>
         <div id="box2"><img id="up_manu_image2" src="insta-logo/insta-logo.png"></div>
         <div class="box"><img class="up_manu_image" src="insta-logo/dm@3x.png"><br></div>
     </div>
-    <div id="profile_image_box">
-        <div class="profile_box"><img class="profile_image"
-                                      src="https://th.bing.com/th/id/OIP.jTq0FDQcjZqaZCtIh3BUIAHaHa?w=192&h=192&c=7&r=0&o=5&pid=1.7">
-            <br> 내스토리
-        </div>
-        <div class="profile_box"><img class="profile_image"
-                                      src="https://th.bing.com/th/id/OIP.jTq0FDQcjZqaZCtIh3BUIAHaHa?w=192&h=192&c=7&r=0&o=5&pid=1.7">
-            <br> 내스토리
-        </div>
-        <div class="profile_box"><img class="profile_image"
-                                      src="https://th.bing.com/th/id/OIP.jTq0FDQcjZqaZCtIh3BUIAHaHa?w=192&h=192&c=7&r=0&o=5&pid=1.7">
-            <br> 내스토리
-        </div>
-        <div class="profile_box"><img class="profile_image"
-                                      src="https://th.bing.com/th/id/OIP.jTq0FDQcjZqaZCtIh3BUIAHaHa?w=192&h=192&c=7&r=0&o=5&pid=1.7">
-            <br> 내스토리
-        </div>
-        <div class="profile_box"><img class="profile_image"
-                                      src="https://th.bing.com/th/id/OIP.jTq0FDQcjZqaZCtIh3BUIAHaHa?w=192&h=192&c=7&r=0&o=5&pid=1.7">
-            <br> 내스토리
-        </div>
-    </div>
-    <div class="story_box">
-        <div class="story_box_top">
-            <div class="story_box_top_profile"><img class="story_box_top_profile_image"
-                                                    src="https://th.bing.com/th/id/OIP.jTq0FDQcjZqaZCtIh3BUIAHaHa?w=192&h=192&c=7&r=0&o=5&pid=1.7">
+    <div id="desk_header">
+        <div id ="desk_wrapper">
+            <div id="desk_insta_box"> <img  src="insta-logo/insta-logo.png"> </div>
+            <div id="desk_search_box"> <img src="insta-logo/search@3x.png"><p>검색</p></div>
+            <div id ="desk_icon_box">
+                <img class="down_image_image" src="insta-logo/home@3x.png">
+                <img class="down_image_image" src="insta-logo/dm@3x.png">
+                <img class="down_image_image" src="insta-logo/trending@3x.png">
+                <img class="down_image_image" src="insta-logo/like@3x.png">
+               <img class="down_image_image" src="insta-logo/more@3x.png">
             </div>
-            <div class=story_box_top_profile_text><b>이용자5</b></div>
-            <div class=story_box_top_space></div>
-            <div class="dropdown_button"><img class="up_manu_image" src="insta-logo/more@3x.png"></div>
         </div>
     </div>
-    <div class="main_image"><img class="main_image"
-                                 src="https://th.bing.com/th/id/OIP.jTq0FDQcjZqaZCtIh3BUIAHaHa?w=192&h=192&c=7&r=0&o=5&pid=1.7"> </div>
 
-    <div class=down_image_list>
-        <div class=down_image_list_item><img class="down_image_image" src="insta-logo/like@3x.png"></div>
-        <div class=down_image_list_item><img class="down_image_image" src="insta-logo/comment@3x.png"></div>
-        <div class=down_image_list_item><img class="down_image_image" src="insta-logo/dm@3x.png"></div>
-        <div class=down_image_list_item_spac3e></div>
-        <div class=down_image_list_item><img class="down_image_image" src="insta-logo/favorite@3x.png"></div>
-    </div>
-    <div class="like_list">
-        <div class="story_box_top_profile"><img class="story_box_top_profile_image"
-                                                src="https://th.bing.com/th/id/OIP.jTq0FDQcjZqaZCtIh3BUIAHaHa?w=192&h=192&c=7&r=0&o=5&pid=1.7">
+    <div id="container">
+        <civ id="main_container">
+            <div id="profile_image_box">
+                <div class="profile_box"><img class="profile_image"
+                                              src="https://th.bing.com/th/id/OIP.jTq0FDQcjZqaZCtIh3BUIAHaHa?w=192&h=192&c=7&r=0&o=5&pid=1.7">
+                    <br> 내스토리
+                </div>
+                <div class="profile_box"><img class="profile_image"
+                                              src="https://th.bing.com/th/id/OIP.jTq0FDQcjZqaZCtIh3BUIAHaHa?w=192&h=192&c=7&r=0&o=5&pid=1.7">
+                    <br> 내스토리
+                </div>
+                <div class="profile_box"><img class="profile_image"
+                                              src="https://th.bing.com/th/id/OIP.jTq0FDQcjZqaZCtIh3BUIAHaHa?w=192&h=192&c=7&r=0&o=5&pid=1.7">
+                    <br> 내스토리
+                </div>
+                <div class="profile_box"><img class="profile_image"
+                                              src="https://th.bing.com/th/id/OIP.jTq0FDQcjZqaZCtIh3BUIAHaHa?w=192&h=192&c=7&r=0&o=5&pid=1.7">
+                    <br> 내스토리
+                </div>
+                <div class="profile_box"><img class="profile_image"
+                                              src="https://th.bing.com/th/id/OIP.jTq0FDQcjZqaZCtIh3BUIAHaHa?w=192&h=192&c=7&r=0&o=5&pid=1.7">
+                    <br> 내스토리
+                </div>
+            </div>
+            <div class="story_box">
+                <div class="story_box_top">
+                    <div class="story_box_top_profile"><img class="story_box_top_profile_image"
+                                                            src="https://th.bing.com/th/id/OIP.jTq0FDQcjZqaZCtIh3BUIAHaHa?w=192&h=192&c=7&r=0&o=5&pid=1.7">
+                    </div>
+                    <div class=story_box_top_profile_text><b>이용자5</b></div>
+                    <div class=story_box_top_space></div>
+                    <div class="dropdown_button"><img class="up_manu_image" src="insta-logo/more@3x.png"></div>
+                </div>
+            </div>
+            <div class="main_image"><img class="main_image"
+                                         src="https://th.bing.com/th/id/OIP.jTq0FDQcjZqaZCtIh3BUIAHaHa?w=192&h=192&c=7&r=0&o=5&pid=1.7">
+            </div>
+
+            <div class=down_image_list>
+                <div class=down_image_list_item><img class="down_image_image" src="insta-logo/like@3x.png"></div>
+                <div class=down_image_list_item><img class="down_image_image" src="insta-logo/comment@3x.png"></div>
+                <div class=down_image_list_item><img class="down_image_image" src="insta-logo/dm@3x.png"></div>
+                <div class=down_image_list_item_spac3e></div>
+                <div class=down_image_list_item><img class="down_image_image" src="insta-logo/favorite@3x.png"></div>
+            </div>
+            <div class="like_list">
+                <div class="story_box_top_profile"><img class="story_box_top_profile_image"
+                                                        src="https://th.bing.com/th/id/OIP.jTq0FDQcjZqaZCtIh3BUIAHaHa?w=192&h=192&c=7&r=0&o=5&pid=1.7">
+                </div>
+                <div class="like_list_text"><b>이용자</b> 님 <b>외 6,671명이</b> 좋아합니다
+                </div>
+            </div>
+            <div style="margin-left: 2%;"> 이용자 안녕하세요</div>
+            <div class="footer">
+                <div class=down_image_list_item><img class="down_image_image" src="insta-logo/home@3x.png"></div>
+                <div class=down_image_list_item><img class="down_image_image" src="insta-logo/search@3x.png"></div>
+                <div class=down_image_list_item><img class="down_image_image" src="insta-logo/trending@3x.png"></div>
+                <div class=down_image_list_item><img class="down_image_image" src="insta-logo/favorite@3x.png"></div>
+                <div class=down_image_list_item><img class="down_image_image" src="insta-logo/home@3x.png"></div>
+            </div>
+        </civ>
+        <div id="desk_container">
+            <div id="desk_container_header">
+                <p class ="gray">회원님을 위한 추천</p>
+                <p>모두보기</p>
+            </div>
+            <div id="desk_container_main">
+                <div class="desk_container_user_card">
+                    <div class="desk_right_side_user_box">
+                        <img src="https://th.bing.com/th/id/OIP.jTq0FDQcjZqaZCtIh3BUIAHaHa?w=192&h=192&c=7&r=0&o=5&pid=1.7">
+                        <div class=desk_right_side_user_box_user_name><p><b>이용자1</b></p>
+                            <p class ="gray">이용자님이 팔로우합니다</p></div>
+                    </div>
+                    <p style="color: blue;">팔로우</p>
+                </div>
+                <div class="desk_container_user_card">
+                    <div class="desk_right_side_user_box">
+                        <img src="https://th.bing.com/th/id/OIP.jTq0FDQcjZqaZCtIh3BUIAHaHa?w=192&h=192&c=7&r=0&o=5&pid=1.7">
+                        <div class=desk_right_side_user_box_user_name><p><b>이용자1</b></p>
+                            <p class ="gray">이용자님이 팔로우합니다</p></div>
+                    </div>
+                    <p style="color: blue;">팔로우</p>
+                </div>
+                <div class="desk_container_user_card">
+                    <div class="desk_right_side_user_box">
+                        <img src="https://th.bing.com/th/id/OIP.jTq0FDQcjZqaZCtIh3BUIAHaHa?w=192&h=192&c=7&r=0&o=5&pid=1.7">
+                        <div class=desk_right_side_user_box_user_name><p><b>이용자1</b></p>
+                            <p class ="gray">이용자님이 팔로우합니다</p></div>
+                    </div>
+                    <p style="color: blue;">팔로우</p>
+                </div>
+                <div class="desk_container_user_card">
+                    <div class="desk_right_side_user_box">
+                        <img src="https://th.bing.com/th/id/OIP.jTq0FDQcjZqaZCtIh3BUIAHaHa?w=192&h=192&c=7&r=0&o=5&pid=1.7">
+                        <div class=desk_right_side_user_box_user_name><p><b>이용자1</b></p>
+                            <p class ="gray">이용자님이 팔로우합니다</p></div>
+                    </div>
+                    <p style="color: blue;">팔로우</p>
+                </div>
+
         </div>
-        <div class="like_list_text"><b>이용자</b> 님 <b>외 6,671명이</b> 좋아합니다
-        </div>
     </div>
-    <div style="margin-left: 2%;"> 이용자 안녕하세요</div>
-    <div class="footer">
-        <div class=down_image_list_item><img class="down_image_image" src="insta-logo/home@3x.png"></div>
-        <div class=down_image_list_item><img class="down_image_image" src="insta-logo/search@3x.png"></div>
-        <div class=down_image_list_item><img class="down_image_image" src="insta-logo/trending@3x.png"></div>
-        <div class=down_image_list_item><img class="down_image_image" src="insta-logo/favorite@3x.png"></div>
-        <div class=down_image_list_item><img class="down_image_image" src="insta-logo/home@3x.png"></div>
     </div>
+
 
 </div>
 
